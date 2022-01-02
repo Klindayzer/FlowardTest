@@ -16,6 +16,8 @@
 		25EB781F2781BFFF000AEE98 /* FlowardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB781E2781BFFF000AEE98 /* FlowardTests.swift */; };
 		25EB78292781BFFF000AEE98 /* FlowardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB78282781BFFF000AEE98 /* FlowardUITests.swift */; };
 		25EB782B2781BFFF000AEE98 /* FlowardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB782A2781BFFF000AEE98 /* FlowardUITestsLaunchTests.swift */; };
+		25EB78442781C234000AEE98 /* AKNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25EB78432781C234000AEE98 /* AKNetworking.framework */; };
+		25EB78452781C234000AEE98 /* AKNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 25EB78432781C234000AEE98 /* AKNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		25EB78462781C235000AEE98 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				25EB78452781C234000AEE98 /* AKNetworking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		25EB78042781BFFE000AEE98 /* Floward.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Floward.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25EB78072781BFFE000AEE98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +65,7 @@
 		25EB78242781BFFF000AEE98 /* FlowardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25EB78282781BFFF000AEE98 /* FlowardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowardUITests.swift; sourceTree = "<group>"; };
 		25EB782A2781BFFF000AEE98 /* FlowardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		25EB78432781C234000AEE98 /* AKNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AKNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25EB78442781C234000AEE98 /* AKNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +101,7 @@
 				25EB781D2781BFFF000AEE98 /* FlowardTests */,
 				25EB78272781BFFF000AEE98 /* FlowardUITests */,
 				25EB78052781BFFE000AEE98 /* Products */,
+				25EB78422781C234000AEE98 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,6 +178,14 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		25EB78422781C234000AEE98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25EB78432781C234000AEE98 /* AKNetworking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -169,6 +196,7 @@
 				25EB78002781BFFE000AEE98 /* Sources */,
 				25EB78012781BFFE000AEE98 /* Frameworks */,
 				25EB78022781BFFE000AEE98 /* Resources */,
+				25EB78462781C235000AEE98 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
