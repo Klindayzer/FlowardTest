@@ -99,10 +99,10 @@
 		25EB78062781BFFE000AEE98 /* Floward */ = {
 			isa = PBXGroup;
 			children = (
-				25EB78072781BFFE000AEE98 /* AppDelegate.swift */,
-				25EB78092781BFFE000AEE98 /* SceneDelegate.swift */,
-				25EB780B2781BFFE000AEE98 /* ViewController.swift */,
-				25EB780D2781BFFE000AEE98 /* Main.storyboard */,
+				25EB78372781C0FA000AEE98 /* App Delegate */,
+				25EB78382781C10D000AEE98 /* App Modules */,
+				25EB78392781C11E000AEE98 /* Helpers */,
+				25EB783A2781C12A000AEE98 /* UI */,
 				25EB78102781BFFF000AEE98 /* Assets.xcassets */,
 				25EB78122781BFFF000AEE98 /* LaunchScreen.storyboard */,
 				25EB78152781BFFF000AEE98 /* Info.plist */,
@@ -125,6 +125,38 @@
 				25EB782A2781BFFF000AEE98 /* FlowardUITestsLaunchTests.swift */,
 			);
 			path = FlowardUITests;
+			sourceTree = "<group>";
+		};
+		25EB78372781C0FA000AEE98 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				25EB78072781BFFE000AEE98 /* AppDelegate.swift */,
+				25EB78092781BFFE000AEE98 /* SceneDelegate.swift */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		25EB78382781C10D000AEE98 /* App Modules */ = {
+			isa = PBXGroup;
+			children = (
+				25EB780B2781BFFE000AEE98 /* ViewController.swift */,
+			);
+			path = "App Modules";
+			sourceTree = "<group>";
+		};
+		25EB78392781C11E000AEE98 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		25EB783A2781C12A000AEE98 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				25EB780D2781BFFE000AEE98 /* Main.storyboard */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
