@@ -18,6 +18,10 @@
 		25EB782B2781BFFF000AEE98 /* FlowardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB782A2781BFFF000AEE98 /* FlowardUITestsLaunchTests.swift */; };
 		25EB78442781C234000AEE98 /* AKNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25EB78432781C234000AEE98 /* AKNetworking.framework */; };
 		25EB78452781C234000AEE98 /* AKNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 25EB78432781C234000AEE98 /* AKNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		25EB784C2781C317000AEE98 /* APIProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB78482781C317000AEE98 /* APIProxy.swift */; };
+		25EB784D2781C317000AEE98 /* APIVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB78492781C317000AEE98 /* APIVersion.swift */; };
+		25EB784E2781C317000AEE98 /* ApiResultable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB784A2781C317000AEE98 /* ApiResultable.swift */; };
+		25EB784F2781C317000AEE98 /* APIBuildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB784B2781C317000AEE98 /* APIBuildable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +70,10 @@
 		25EB78282781BFFF000AEE98 /* FlowardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowardUITests.swift; sourceTree = "<group>"; };
 		25EB782A2781BFFF000AEE98 /* FlowardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowardUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		25EB78432781C234000AEE98 /* AKNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AKNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25EB78482781C317000AEE98 /* APIProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIProxy.swift; sourceTree = "<group>"; };
+		25EB78492781C317000AEE98 /* APIVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIVersion.swift; sourceTree = "<group>"; };
+		25EB784A2781C317000AEE98 /* ApiResultable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResultable.swift; sourceTree = "<group>"; };
+		25EB784B2781C317000AEE98 /* APIBuildable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIBuildable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +174,7 @@
 		25EB78392781C11E000AEE98 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				25EB78472781C2E2000AEE98 /* Networking */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -184,6 +193,17 @@
 				25EB78432781C234000AEE98 /* AKNetworking.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		25EB78472781C2E2000AEE98 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				25EB784B2781C317000AEE98 /* APIBuildable.swift */,
+				25EB78482781C317000AEE98 /* APIProxy.swift */,
+				25EB784A2781C317000AEE98 /* ApiResultable.swift */,
+				25EB78492781C317000AEE98 /* APIVersion.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,7 +339,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				25EB780C2781BFFE000AEE98 /* ViewController.swift in Sources */,
+				25EB784C2781C317000AEE98 /* APIProxy.swift in Sources */,
 				25EB78082781BFFE000AEE98 /* AppDelegate.swift in Sources */,
+				25EB784E2781C317000AEE98 /* ApiResultable.swift in Sources */,
+				25EB784D2781C317000AEE98 /* APIVersion.swift in Sources */,
+				25EB784F2781C317000AEE98 /* APIBuildable.swift in Sources */,
 				25EB780A2781BFFE000AEE98 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
