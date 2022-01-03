@@ -13,6 +13,7 @@ enum PropertyListKeys: String {
     case plistEntryKey = "Integration Specific Identifiers"
     case scheme = "UD_CURRENT_SCHEME_NAME"
     case apiBaseUrl = "UD_API_BASE_URL"
+    case apiKey = "UD_API_KEY"
 }
 
 private enum Scheme: String {

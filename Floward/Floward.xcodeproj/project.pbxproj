@@ -10,6 +10,13 @@
 		259BF72C2783288C00589D8C /* HomeViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF72B2783288C00589D8C /* HomeViewController+UI.swift */; };
 		259BF72F27833CEE00589D8C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 259BF72E27833CEE00589D8C /* Kingfisher */; };
 		259BF73227833CFF00589D8C /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 259BF73127833CFF00589D8C /* MBProgressHUD */; };
+		259BF73527833D4F00589D8C /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF73327833D4F00589D8C /* UIViewController.swift */; };
+		259BF73627833D4F00589D8C /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF73427833D4F00589D8C /* UIImageView.swift */; };
+		259BF73927833DA400589D8C /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF73727833DA400589D8C /* Collection.swift */; };
+		259BF73A27833DA400589D8C /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF73827833DA400589D8C /* NSObject.swift */; };
+		259BF74027833EE600589D8C /* HomeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF73E27833EE600589D8C /* HomeResult.swift */; };
+		259BF74127833EE600589D8C /* HomeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF73F27833EE600589D8C /* HomeApi.swift */; };
+		259BF7432783414000589D8C /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF7422783414000589D8C /* APIError.swift */; };
 		25EB78082781BFFE000AEE98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB78072781BFFE000AEE98 /* AppDelegate.swift */; };
 		25EB780A2781BFFE000AEE98 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB78092781BFFE000AEE98 /* SceneDelegate.swift */; };
 		25EB780C2781BFFE000AEE98 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB780B2781BFFE000AEE98 /* HomeViewController.swift */; };
@@ -20,7 +27,6 @@
 		25EB782B2781BFFF000AEE98 /* FlowardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB782A2781BFFF000AEE98 /* FlowardUITestsLaunchTests.swift */; };
 		25EB78442781C234000AEE98 /* AKNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25EB78432781C234000AEE98 /* AKNetworking.framework */; };
 		25EB78452781C234000AEE98 /* AKNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 25EB78432781C234000AEE98 /* AKNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		25EB784C2781C317000AEE98 /* APIProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB78482781C317000AEE98 /* APIProxy.swift */; };
 		25EB784D2781C317000AEE98 /* APIVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB78492781C317000AEE98 /* APIVersion.swift */; };
 		25EB784E2781C317000AEE98 /* ApiResultable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB784A2781C317000AEE98 /* ApiResultable.swift */; };
 		25EB784F2781C317000AEE98 /* APIBuildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB784B2781C317000AEE98 /* APIBuildable.swift */; };
@@ -61,6 +67,13 @@
 
 /* Begin PBXFileReference section */
 		259BF72B2783288C00589D8C /* HomeViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+UI.swift"; sourceTree = "<group>"; };
+		259BF73327833D4F00589D8C /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		259BF73427833D4F00589D8C /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		259BF73727833DA400589D8C /* Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		259BF73827833DA400589D8C /* NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
+		259BF73E27833EE600589D8C /* HomeResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeResult.swift; sourceTree = "<group>"; };
+		259BF73F27833EE600589D8C /* HomeApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeApi.swift; sourceTree = "<group>"; };
+		259BF7422783414000589D8C /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		25EB78042781BFFE000AEE98 /* Floward.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Floward.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25EB78072781BFFE000AEE98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25EB78092781BFFE000AEE98 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,7 +87,6 @@
 		25EB78282781BFFF000AEE98 /* FlowardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowardUITests.swift; sourceTree = "<group>"; };
 		25EB782A2781BFFF000AEE98 /* FlowardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowardUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		25EB78432781C234000AEE98 /* AKNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AKNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		25EB78482781C317000AEE98 /* APIProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIProxy.swift; sourceTree = "<group>"; };
 		25EB78492781C317000AEE98 /* APIVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIVersion.swift; sourceTree = "<group>"; };
 		25EB784A2781C317000AEE98 /* ApiResultable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResultable.swift; sourceTree = "<group>"; };
 		25EB784B2781C317000AEE98 /* APIBuildable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIBuildable.swift; sourceTree = "<group>"; };
@@ -110,6 +122,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		259BF73B27833DC800589D8C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		259BF73C27833DCF00589D8C /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		259BF73D27833DD600589D8C /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				259BF73F27833EE600589D8C /* HomeApi.swift */,
+				259BF73E27833EE600589D8C /* HomeResult.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
 		25EB77FB2781BFFE000AEE98 = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +208,9 @@
 		25EB78382781C10D000AEE98 /* App Modules */ = {
 			isa = PBXGroup;
 			children = (
+				259BF73D27833DD600589D8C /* Api */,
+				259BF73C27833DCF00589D8C /* View Model */,
+				259BF73B27833DC800589D8C /* Model */,
 				25EB780B2781BFFE000AEE98 /* HomeViewController.swift */,
 				259BF72B2783288C00589D8C /* HomeViewController+UI.swift */,
 			);
@@ -201,9 +239,9 @@
 			isa = PBXGroup;
 			children = (
 				25EB784B2781C317000AEE98 /* APIBuildable.swift */,
-				25EB78482781C317000AEE98 /* APIProxy.swift */,
 				25EB784A2781C317000AEE98 /* ApiResultable.swift */,
 				25EB78492781C317000AEE98 /* APIVersion.swift */,
+				259BF7422783414000589D8C /* APIError.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -211,6 +249,10 @@
 		25EB78522781C39D000AEE98 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				259BF73727833DA400589D8C /* Collection.swift */,
+				259BF73827833DA400589D8C /* NSObject.swift */,
+				259BF73427833D4F00589D8C /* UIImageView.swift */,
+				259BF73327833D4F00589D8C /* UIViewController.swift */,
 				25EB78532781C3B6000AEE98 /* String.swift */,
 			);
 			path = Extensions;
@@ -357,12 +399,18 @@
 			files = (
 				25EB780C2781BFFE000AEE98 /* HomeViewController.swift in Sources */,
 				25EB78512781C37C000AEE98 /* Environment.swift in Sources */,
-				25EB784C2781C317000AEE98 /* APIProxy.swift in Sources */,
+				259BF73A27833DA400589D8C /* NSObject.swift in Sources */,
+				259BF73527833D4F00589D8C /* UIViewController.swift in Sources */,
+				259BF73627833D4F00589D8C /* UIImageView.swift in Sources */,
 				259BF72C2783288C00589D8C /* HomeViewController+UI.swift in Sources */,
+				259BF73927833DA400589D8C /* Collection.swift in Sources */,
+				259BF74027833EE600589D8C /* HomeResult.swift in Sources */,
 				25EB78542781C3B6000AEE98 /* String.swift in Sources */,
 				25EB78082781BFFE000AEE98 /* AppDelegate.swift in Sources */,
+				259BF74127833EE600589D8C /* HomeApi.swift in Sources */,
 				25EB784E2781C317000AEE98 /* ApiResultable.swift in Sources */,
 				25EB784D2781C317000AEE98 /* APIVersion.swift in Sources */,
+				259BF7432783414000589D8C /* APIError.swift in Sources */,
 				25EB784F2781C317000AEE98 /* APIBuildable.swift in Sources */,
 				25EB780A2781BFFE000AEE98 /* SceneDelegate.swift in Sources */,
 			);
@@ -471,6 +519,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				UD_API_BASE_URL = testURL;
+				UD_API_KEY = 3184d334;
 				UD_CURRENT_SCHEME_NAME = Develop;
 			};
 			name = Debug;
@@ -527,6 +576,7 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				UD_API_BASE_URL = testURL;
+				UD_API_KEY = 3184d334;
 				UD_CURRENT_SCHEME_NAME = Production;
 				VALIDATE_PRODUCT = YES;
 			};
