@@ -134,12 +134,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		259BF73C27833DCF00589D8C /* View Model */ = {
+		259BF73C27833DCF00589D8C /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				259BF73B27833DC800589D8C /* Model */,
+				259BF73D27833DD600589D8C /* Api */,
 				259BF7442783419900589D8C /* HomeViewModel.swift */,
 			);
-			path = "View Model";
+			path = Logic;
 			sourceTree = "<group>";
 		};
 		259BF73D27833DD600589D8C /* Api */ = {
@@ -214,9 +216,7 @@
 		25EB78382781C10D000AEE98 /* App Modules */ = {
 			isa = PBXGroup;
 			children = (
-				259BF73D27833DD600589D8C /* Api */,
-				259BF73C27833DCF00589D8C /* View Model */,
-				259BF73B27833DC800589D8C /* Model */,
+				259BF73C27833DCF00589D8C /* Logic */,
 				25EB780B2781BFFE000AEE98 /* HomeViewController.swift */,
 				259BF72B2783288C00589D8C /* HomeViewController+UI.swift */,
 			);
