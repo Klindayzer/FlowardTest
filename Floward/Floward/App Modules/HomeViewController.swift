@@ -8,7 +8,7 @@
 import UIKit
 
 final class HomeViewController: UIViewController {
-
+    
     // MARK: - Definitions
     private enum Values {
         
@@ -18,9 +18,10 @@ final class HomeViewController: UIViewController {
     }
     
     // MARK: - Protucted Properties
-    private var viewModel = HomeViewModel()
     weak var searchTextField: UITextField?
     weak var collectionView: UICollectionView?
+    private var viewModel = HomeViewModel()
+    private var isWating = false
     
     // MARK: - Overriden Methods
     override func viewDidLoad() {
@@ -36,16 +37,26 @@ final class HomeViewController: UIViewController {
     }
     
     // MARK: - Protucted Methods
-    private func search(term: String) {
+    private func search(term: String, freshTerm: Bool = true) {
         
         showLoader()
         viewModel.search(for: term) { [weak self] success, error in
             
             defer {
+                self?.isWating = false
                 self?.hideLoader()
             }
             
-            success ? self?.collectionView?.reloadData() : self?.handleFailureResponse(error: error)
+            success ? self?.handleSuccessResponse(freshTerm) : self?.handleFailureResponse(error: error)
+        }
+    }
+    
+    private func handleSuccessResponse(_ freshTerm: Bool) {
+        
+        collectionView?.reloadData()
+        if freshTerm, viewModel.itemsCount > 0 {
+            let indexPath = IndexPath(row: 0, section: 0)
+            collectionView?.scrollToItem(at: indexPath, at: .top, animated: false)
         }
     }
     
@@ -60,7 +71,16 @@ final class HomeViewController: UIViewController {
         
         view.endEditing(true)
         guard let term = viewModel.validateSearchTerm(searchTextField?.text) else { return }
+        viewModel.currentPage = 1
         search(term: term)
+    }
+    
+    private func loadMore() {
+        
+        guard let term = viewModel.validateSearchTerm(searchTextField?.text), viewModel.shouldLoadMore else { return }
+        isWating = true
+        viewModel.currentPage += 1
+        search(term: term, freshTerm: false)
     }
     
     // MARK: - Selectors
@@ -93,8 +113,15 @@ extension HomeViewController: UICollectionViewDataSource {
             return UICollectionViewCell()
         }
         let cell: MovieCell = collectionView.dequeue(for: indexPath)
-        cell.setup(with: item)        
+        cell.setup(with: item)
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
+        if indexPath.row == viewModel.itemsCount - 2 && !isWating {
+            loadMore()
+        }
     }
 }
 

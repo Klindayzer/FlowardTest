@@ -15,13 +15,17 @@ final class HomeViewModel {
     private var movies = [MoviePresentable]()
     private var model: HomeResult? {
         didSet {
-            movies = model?.convert() ?? []
+            totalResults = Int(model?.totalResults ?? "0") ?? 0
         }
     }
-    
+    private var totalResults = 0
     var currentPage = 1
     var itemsCount: Int {
         movies.count
+    }
+    
+    var shouldLoadMore: Bool {        
+        itemsCount < totalResults
     }
     
     // MARK: - Constructors
@@ -37,7 +41,7 @@ final class HomeViewModel {
             
             switch result {
             case .success(let model):
-                self?.model = model
+                self?.handleSuccessResponse(model)
                 callback(true, .empty)
                 
             case .failure(let serviceError):
@@ -55,5 +59,18 @@ final class HomeViewModel {
         guard let term = term?.trimmingCharacters(in: .whitespacesAndNewlines),
               !term.isEmpty else { return nil }
         return term
+    }
+    
+    // MARK: - Protucted Methods
+    func handleSuccessResponse(_ model: HomeResult) {
+        
+        self.model = model
+        let movies = model.convert()
+        if currentPage == 1 {
+            self.movies = movies
+            
+        } else {
+            self.movies.append(contentsOf: movies)
+        }
     }
 }
