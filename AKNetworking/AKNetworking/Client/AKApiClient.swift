@@ -11,7 +11,7 @@ import Foundation
 public final class AKApiClient: AKClientContractor, AKReachability, AKLogger {
     
     // MARK: - Properties
-    var fetchable: AKFetchableContractor = AKFetchable()
+    var fetchable: AKFetchableContractor
     
     // MARK: - Computed Properties
     var shouldLog: Bool {
@@ -19,7 +19,9 @@ public final class AKApiClient: AKClientContractor, AKReachability, AKLogger {
     }
     
     // MARK: - Constructors
-    public init() {}
+    public init(fetchable: AKFetchableContractor = AKFetchable()) {
+        self.fetchable = fetchable
+    }
     
     // MARK: - Exposed Methods
     public func request<T>(buildable: AKBuildable, type: T.Type, completion: @escaping (ServiceResult<T>) -> Void) where T : AKResultable {
