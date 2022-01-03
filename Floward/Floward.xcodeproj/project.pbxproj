@@ -138,7 +138,7 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		259BF73C27833DCF00589D8C /* Logic */ = {
+		259BF73C27833DCF00589D8C /* Business */ = {
 			isa = PBXGroup;
 			children = (
 				259BF7482783511000589D8C /* Cells */,
@@ -146,7 +146,7 @@
 				259BF73D27833DD600589D8C /* Api */,
 				259BF7442783419900589D8C /* HomeViewModel.swift */,
 			);
-			path = Logic;
+			path = Business;
 			sourceTree = "<group>";
 		};
 		259BF73D27833DD600589D8C /* Api */ = {
@@ -229,7 +229,7 @@
 		25EB78382781C10D000AEE98 /* App Modules */ = {
 			isa = PBXGroup;
 			children = (
-				259BF73C27833DCF00589D8C /* Logic */,
+				259BF73C27833DCF00589D8C /* Business */,
 				25EB780B2781BFFE000AEE98 /* HomeViewController.swift */,
 				259BF72B2783288C00589D8C /* HomeViewController+UI.swift */,
 			);
