@@ -26,7 +26,8 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -35,16 +36,6 @@
                BlueprintIdentifier = "25EB78192781BFFF000AEE98"
                BuildableName = "FlowardTests.xctest"
                BlueprintName = "FlowardTests"
-               ReferencedContainer = "container:Floward.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "25EB78232781BFFF000AEE98"
-               BuildableName = "FlowardUITests.xctest"
-               BlueprintName = "FlowardUITests"
                ReferencedContainer = "container:Floward.xcodeproj">
             </BuildableReference>
          </TestableReference>

@@ -18,7 +18,7 @@ final class HomeViewModel {
             totalResults = Int(model?.totalResults ?? "0") ?? 0
         }
     }
-    private var totalResults = 0
+    var totalResults = 0
     var currentPage = 1
     var itemsCount: Int {
         movies.count

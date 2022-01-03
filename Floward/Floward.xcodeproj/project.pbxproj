@@ -21,14 +21,21 @@
 		259BF747278341DC00589D8C /* MoviePresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF746278341DC00589D8C /* MoviePresentable.swift */; };
 		259BF74A2783512A00589D8C /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF7492783512A00589D8C /* MovieCell.swift */; };
 		259BF74C278354C100589D8C /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF74B278354C100589D8C /* UICollectionView.swift */; };
+		259BF751278375F700589D8C /* EnvironmentTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF74F278375F600589D8C /* EnvironmentTest.swift */; };
+		259BF752278375F700589D8C /* StringTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF750278375F700589D8C /* StringTest.swift */; };
+		259BF7562783760300589D8C /* MockClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF7532783760300589D8C /* MockClient.swift */; };
+		259BF7572783760300589D8C /* MockBuildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF7542783760300589D8C /* MockBuildable.swift */; };
+		259BF7582783760300589D8C /* NetworkingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF7552783760300589D8C /* NetworkingTest.swift */; };
+		259BF75D2783773700589D8C /* HomeMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 259BF75A2783773700589D8C /* HomeMock.json */; };
+		259BF75E2783773700589D8C /* HomeApiTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF75B2783773700589D8C /* HomeApiTest.swift */; };
+		259BF75F2783773700589D8C /* HomeViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF75C2783773700589D8C /* HomeViewModelTest.swift */; };
+		259BF761278379FA00589D8C /* HomeMockOnePage.json in Resources */ = {isa = PBXBuildFile; fileRef = 259BF760278379FA00589D8C /* HomeMockOnePage.json */; };
+		259BF76327837B5400589D8C /* HomeMockFailure.json in Resources */ = {isa = PBXBuildFile; fileRef = 259BF76227837B5400589D8C /* HomeMockFailure.json */; };
 		25EB78082781BFFE000AEE98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB78072781BFFE000AEE98 /* AppDelegate.swift */; };
 		25EB780A2781BFFE000AEE98 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB78092781BFFE000AEE98 /* SceneDelegate.swift */; };
 		25EB780C2781BFFE000AEE98 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB780B2781BFFE000AEE98 /* HomeViewController.swift */; };
 		25EB78112781BFFF000AEE98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25EB78102781BFFF000AEE98 /* Assets.xcassets */; };
 		25EB78142781BFFF000AEE98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25EB78122781BFFF000AEE98 /* LaunchScreen.storyboard */; };
-		25EB781F2781BFFF000AEE98 /* FlowardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB781E2781BFFF000AEE98 /* FlowardTests.swift */; };
-		25EB78292781BFFF000AEE98 /* FlowardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB78282781BFFF000AEE98 /* FlowardUITests.swift */; };
-		25EB782B2781BFFF000AEE98 /* FlowardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB782A2781BFFF000AEE98 /* FlowardUITestsLaunchTests.swift */; };
 		25EB78442781C234000AEE98 /* AKNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25EB78432781C234000AEE98 /* AKNetworking.framework */; };
 		25EB78452781C234000AEE98 /* AKNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 25EB78432781C234000AEE98 /* AKNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		25EB784D2781C317000AEE98 /* APIVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB78492781C317000AEE98 /* APIVersion.swift */; };
@@ -40,13 +47,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		25EB781B2781BFFF000AEE98 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 25EB77FC2781BFFE000AEE98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 25EB78032781BFFE000AEE98;
-			remoteInfo = Floward;
-		};
-		25EB78252781BFFF000AEE98 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 25EB77FC2781BFFE000AEE98 /* Project object */;
 			proxyType = 1;
@@ -82,6 +82,16 @@
 		259BF746278341DC00589D8C /* MoviePresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePresentable.swift; sourceTree = "<group>"; };
 		259BF7492783512A00589D8C /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		259BF74B278354C100589D8C /* UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
+		259BF74F278375F600589D8C /* EnvironmentTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentTest.swift; sourceTree = "<group>"; };
+		259BF750278375F700589D8C /* StringTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTest.swift; sourceTree = "<group>"; };
+		259BF7532783760300589D8C /* MockClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockClient.swift; sourceTree = "<group>"; };
+		259BF7542783760300589D8C /* MockBuildable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockBuildable.swift; sourceTree = "<group>"; };
+		259BF7552783760300589D8C /* NetworkingTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingTest.swift; sourceTree = "<group>"; };
+		259BF75A2783773700589D8C /* HomeMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HomeMock.json; sourceTree = "<group>"; };
+		259BF75B2783773700589D8C /* HomeApiTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeApiTest.swift; sourceTree = "<group>"; };
+		259BF75C2783773700589D8C /* HomeViewModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModelTest.swift; sourceTree = "<group>"; };
+		259BF760278379FA00589D8C /* HomeMockOnePage.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HomeMockOnePage.json; sourceTree = "<group>"; };
+		259BF76227837B5400589D8C /* HomeMockFailure.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HomeMockFailure.json; sourceTree = "<group>"; };
 		25EB78042781BFFE000AEE98 /* Floward.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Floward.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25EB78072781BFFE000AEE98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25EB78092781BFFE000AEE98 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,10 +100,6 @@
 		25EB78132781BFFF000AEE98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25EB78152781BFFF000AEE98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25EB781A2781BFFF000AEE98 /* FlowardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		25EB781E2781BFFF000AEE98 /* FlowardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowardTests.swift; sourceTree = "<group>"; };
-		25EB78242781BFFF000AEE98 /* FlowardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		25EB78282781BFFF000AEE98 /* FlowardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowardUITests.swift; sourceTree = "<group>"; };
-		25EB782A2781BFFF000AEE98 /* FlowardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowardUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		25EB78432781C234000AEE98 /* AKNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AKNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25EB78492781C317000AEE98 /* APIVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIVersion.swift; sourceTree = "<group>"; };
 		25EB784A2781C317000AEE98 /* ApiResultable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResultable.swift; sourceTree = "<group>"; };
@@ -114,13 +120,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		25EB78172781BFFF000AEE98 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		25EB78212781BFFF000AEE98 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -166,12 +165,43 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		259BF74D278375A200589D8C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				259BF74E278375AE00589D8C /* Networking */,
+				259BF74F278375F600589D8C /* EnvironmentTest.swift */,
+				259BF750278375F700589D8C /* StringTest.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		259BF74E278375AE00589D8C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				259BF7542783760300589D8C /* MockBuildable.swift */,
+				259BF7532783760300589D8C /* MockClient.swift */,
+				259BF7552783760300589D8C /* NetworkingTest.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		259BF7592783771900589D8C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				259BF75A2783773700589D8C /* HomeMock.json */,
+				259BF760278379FA00589D8C /* HomeMockOnePage.json */,
+				259BF76227837B5400589D8C /* HomeMockFailure.json */,
+				259BF75B2783773700589D8C /* HomeApiTest.swift */,
+				259BF75C2783773700589D8C /* HomeViewModelTest.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		25EB77FB2781BFFE000AEE98 = {
 			isa = PBXGroup;
 			children = (
 				25EB78062781BFFE000AEE98 /* Floward */,
 				25EB781D2781BFFF000AEE98 /* FlowardTests */,
-				25EB78272781BFFF000AEE98 /* FlowardUITests */,
 				25EB78052781BFFE000AEE98 /* Products */,
 				25EB78422781C234000AEE98 /* Frameworks */,
 			);
@@ -182,7 +212,6 @@
 			children = (
 				25EB78042781BFFE000AEE98 /* Floward.app */,
 				25EB781A2781BFFF000AEE98 /* FlowardTests.xctest */,
-				25EB78242781BFFF000AEE98 /* FlowardUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -203,18 +232,10 @@
 		25EB781D2781BFFF000AEE98 /* FlowardTests */ = {
 			isa = PBXGroup;
 			children = (
-				25EB781E2781BFFF000AEE98 /* FlowardTests.swift */,
+				259BF7592783771900589D8C /* Home */,
+				259BF74D278375A200589D8C /* Helpers */,
 			);
 			path = FlowardTests;
-			sourceTree = "<group>";
-		};
-		25EB78272781BFFF000AEE98 /* FlowardUITests */ = {
-			isa = PBXGroup;
-			children = (
-				25EB78282781BFFF000AEE98 /* FlowardUITests.swift */,
-				25EB782A2781BFFF000AEE98 /* FlowardUITestsLaunchTests.swift */,
-			);
-			path = FlowardUITests;
 			sourceTree = "<group>";
 		};
 		25EB78372781C0FA000AEE98 /* App Delegate */ = {
@@ -321,24 +342,6 @@
 			productReference = 25EB781A2781BFFF000AEE98 /* FlowardTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		25EB78232781BFFF000AEE98 /* FlowardUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 25EB78342781BFFF000AEE98 /* Build configuration list for PBXNativeTarget "FlowardUITests" */;
-			buildPhases = (
-				25EB78202781BFFF000AEE98 /* Sources */,
-				25EB78212781BFFF000AEE98 /* Frameworks */,
-				25EB78222781BFFF000AEE98 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				25EB78262781BFFF000AEE98 /* PBXTargetDependency */,
-			);
-			name = FlowardUITests;
-			productName = FlowardUITests;
-			productReference = 25EB78242781BFFF000AEE98 /* FlowardUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -353,10 +356,6 @@
 						CreatedOnToolsVersion = 13.1;
 					};
 					25EB78192781BFFF000AEE98 = {
-						CreatedOnToolsVersion = 13.1;
-						TestTargetID = 25EB78032781BFFE000AEE98;
-					};
-					25EB78232781BFFF000AEE98 = {
 						CreatedOnToolsVersion = 13.1;
 						TestTargetID = 25EB78032781BFFE000AEE98;
 					};
@@ -381,7 +380,6 @@
 			targets = (
 				25EB78032781BFFE000AEE98 /* Floward */,
 				25EB78192781BFFF000AEE98 /* FlowardTests */,
-				25EB78232781BFFF000AEE98 /* FlowardUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -400,13 +398,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		25EB78222781BFFF000AEE98 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				259BF75D2783773700589D8C /* HomeMock.json in Resources */,
+				259BF761278379FA00589D8C /* HomeMockOnePage.json in Resources */,
+				259BF76327837B5400589D8C /* HomeMockFailure.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,16 +438,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25EB781F2781BFFF000AEE98 /* FlowardTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		25EB78202781BFFF000AEE98 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				25EB782B2781BFFF000AEE98 /* FlowardUITestsLaunchTests.swift in Sources */,
-				25EB78292781BFFF000AEE98 /* FlowardUITests.swift in Sources */,
+				259BF7562783760300589D8C /* MockClient.swift in Sources */,
+				259BF75E2783773700589D8C /* HomeApiTest.swift in Sources */,
+				259BF7582783760300589D8C /* NetworkingTest.swift in Sources */,
+				259BF7572783760300589D8C /* MockBuildable.swift in Sources */,
+				259BF751278375F700589D8C /* EnvironmentTest.swift in Sources */,
+				259BF752278375F700589D8C /* StringTest.swift in Sources */,
+				259BF75F2783773700589D8C /* HomeViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,11 +455,6 @@
 			isa = PBXTargetDependency;
 			target = 25EB78032781BFFE000AEE98 /* Floward */;
 			targetProxy = 25EB781B2781BFFF000AEE98 /* PBXContainerItemProxy */;
-		};
-		25EB78262781BFFF000AEE98 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 25EB78032781BFFE000AEE98 /* Floward */;
-			targetProxy = 25EB78252781BFFF000AEE98 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -708,50 +694,6 @@
 			};
 			name = Release;
 		};
-		25EB78352781BFFF000AEE98 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.klindayzer.FlowardUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Floward;
-			};
-			name = Debug;
-		};
-		25EB78362781BFFF000AEE98 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.klindayzer.FlowardUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Floward;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -778,15 +720,6 @@
 			buildConfigurations = (
 				25EB78322781BFFF000AEE98 /* Debug */,
 				25EB78332781BFFF000AEE98 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		25EB78342781BFFF000AEE98 /* Build configuration list for PBXNativeTarget "FlowardUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				25EB78352781BFFF000AEE98 /* Debug */,
-				25EB78362781BFFF000AEE98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
