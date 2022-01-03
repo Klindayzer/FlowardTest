@@ -16,7 +16,7 @@ protocol MovieConverter {
     func convert() -> [MoviePresentable]
 }
 
-extension MovieConverter where Self == HomeResult  {
+extension MovieConverter where Self == HomeResult {
     
     func convert() -> [MoviePresentable] {
         
