@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		259BF72C2783288C00589D8C /* HomeViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF72B2783288C00589D8C /* HomeViewController+UI.swift */; };
+		259BF72F27833CEE00589D8C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 259BF72E27833CEE00589D8C /* Kingfisher */; };
+		259BF73227833CFF00589D8C /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 259BF73127833CFF00589D8C /* MBProgressHUD */; };
 		25EB78082781BFFE000AEE98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB78072781BFFE000AEE98 /* AppDelegate.swift */; };
 		25EB780A2781BFFE000AEE98 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB78092781BFFE000AEE98 /* SceneDelegate.swift */; };
 		25EB780C2781BFFE000AEE98 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB780B2781BFFE000AEE98 /* HomeViewController.swift */; };
@@ -85,6 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				259BF73227833CFF00589D8C /* MBProgressHUD in Frameworks */,
+				259BF72F27833CEE00589D8C /* Kingfisher in Frameworks */,
 				25EB78442781C234000AEE98 /* AKNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,6 +233,10 @@
 			dependencies = (
 			);
 			name = Floward;
+			packageProductDependencies = (
+				259BF72E27833CEE00589D8C /* Kingfisher */,
+				259BF73127833CFF00589D8C /* MBProgressHUD */,
+			);
 			productName = Floward;
 			productReference = 25EB78042781BFFE000AEE98 /* Floward.app */;
 			productType = "com.apple.product-type.application";
@@ -301,6 +309,10 @@
 				Base,
 			);
 			mainGroup = 25EB77FB2781BFFE000AEE98;
+			packageReferences = (
+				259BF72D27833CEE00589D8C /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				259BF73027833CFF00589D8C /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
+			);
 			productRefGroup = 25EB78052781BFFE000AEE98 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -706,6 +718,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		259BF72D27833CEE00589D8C /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = exactVersion;
+				version = 7.1.2;
+			};
+		};
+		259BF73027833CFF00589D8C /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jdg/MBProgressHUD.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		259BF72E27833CEE00589D8C /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 259BF72D27833CEE00589D8C /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		259BF73127833CFF00589D8C /* MBProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 259BF73027833CFF00589D8C /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
+			productName = MBProgressHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 25EB77FC2781BFFE000AEE98 /* Project object */;
 }
