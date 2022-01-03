@@ -83,9 +83,16 @@ extension HomeViewController {
     private func createSearchTextField() -> UITextField {
         
         let textField = UITextField()
-        textField.placeholder = "Search for a movie"
+        textField.attributedPlaceholder = NSAttributedString(string: "Search for a movie", attributes: [NSAttributedString.Key.foregroundColor: UIColor.systemGray])
         textField.returnKeyType = .search
         textField.borderStyle = .roundedRect
+        textField.backgroundColor = .white
+        textField.layer.borderWidth = 1
+        textField.layer.borderColor = UIColor.systemGray.cgColor
+        textField.layer.cornerRadius = 8
+        textField.clipsToBounds = true
+        textField.textColor = .black
+        textField.autocorrectionType = .no
         textField.delegate = self
         textField.translatesAutoresizingMaskIntoConstraints = false
         searchTextField = textField
@@ -96,6 +103,8 @@ extension HomeViewController {
         
         let layout = UICollectionViewLayout()
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.backgroundColor = .white
+        collectionView.register(MovieCell.self, forCellWithReuseIdentifier: MovieCell.name)
         collectionView.dataSource = self        
         collectionView.delegate = self
         collectionView.translatesAutoresizingMaskIntoConstraints = false

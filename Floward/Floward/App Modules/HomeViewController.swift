@@ -18,6 +18,7 @@ final class HomeViewController: UIViewController {
     }
     
     // MARK: - Protucted Properties
+    private var viewModel = HomeViewModel()
     weak var searchTextField: UITextField?
     weak var collectionView: UICollectionView?
     
@@ -57,11 +58,17 @@ extension HomeViewController: UITextFieldDelegate {
 extension HomeViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return viewModel.itemsCount
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        
+        guard let item = viewModel.item(at: indexPath.row) else {
+            return UICollectionViewCell()
+        }
+        let cell: MovieCell = collectionView.dequeue(for: indexPath)
+        cell.setup(with: item)        
+        return cell
     }
 }
 

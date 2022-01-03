@@ -19,6 +19,8 @@
 		259BF7432783414000589D8C /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF7422783414000589D8C /* APIError.swift */; };
 		259BF7452783419900589D8C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF7442783419900589D8C /* HomeViewModel.swift */; };
 		259BF747278341DC00589D8C /* MoviePresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF746278341DC00589D8C /* MoviePresentable.swift */; };
+		259BF74A2783512A00589D8C /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF7492783512A00589D8C /* MovieCell.swift */; };
+		259BF74C278354C100589D8C /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF74B278354C100589D8C /* UICollectionView.swift */; };
 		25EB78082781BFFE000AEE98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB78072781BFFE000AEE98 /* AppDelegate.swift */; };
 		25EB780A2781BFFE000AEE98 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB78092781BFFE000AEE98 /* SceneDelegate.swift */; };
 		25EB780C2781BFFE000AEE98 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB780B2781BFFE000AEE98 /* HomeViewController.swift */; };
@@ -78,6 +80,8 @@
 		259BF7422783414000589D8C /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		259BF7442783419900589D8C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		259BF746278341DC00589D8C /* MoviePresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePresentable.swift; sourceTree = "<group>"; };
+		259BF7492783512A00589D8C /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		259BF74B278354C100589D8C /* UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		25EB78042781BFFE000AEE98 /* Floward.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Floward.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25EB78072781BFFE000AEE98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25EB78092781BFFE000AEE98 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +141,7 @@
 		259BF73C27833DCF00589D8C /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				259BF7482783511000589D8C /* Cells */,
 				259BF73B27833DC800589D8C /* Model */,
 				259BF73D27833DD600589D8C /* Api */,
 				259BF7442783419900589D8C /* HomeViewModel.swift */,
@@ -151,6 +156,14 @@
 				259BF73E27833EE600589D8C /* HomeResult.swift */,
 			);
 			path = Api;
+			sourceTree = "<group>";
+		};
+		259BF7482783511000589D8C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				259BF7492783512A00589D8C /* MovieCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		25EB77FB2781BFFE000AEE98 = {
@@ -255,6 +268,7 @@
 		25EB78522781C39D000AEE98 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				259BF74B278354C100589D8C /* UICollectionView.swift */,
 				259BF73727833DA400589D8C /* Collection.swift */,
 				259BF73827833DA400589D8C /* NSObject.swift */,
 				259BF73427833D4F00589D8C /* UIImageView.swift */,
@@ -413,10 +427,12 @@
 				259BF73927833DA400589D8C /* Collection.swift in Sources */,
 				259BF74027833EE600589D8C /* HomeResult.swift in Sources */,
 				25EB78542781C3B6000AEE98 /* String.swift in Sources */,
+				259BF74C278354C100589D8C /* UICollectionView.swift in Sources */,
 				25EB78082781BFFE000AEE98 /* AppDelegate.swift in Sources */,
 				259BF74127833EE600589D8C /* HomeApi.swift in Sources */,
 				25EB784E2781C317000AEE98 /* ApiResultable.swift in Sources */,
 				25EB784D2781C317000AEE98 /* APIVersion.swift in Sources */,
+				259BF74A2783512A00589D8C /* MovieCell.swift in Sources */,
 				259BF747278341DC00589D8C /* MoviePresentable.swift in Sources */,
 				259BF7432783414000589D8C /* APIError.swift in Sources */,
 				25EB784F2781C317000AEE98 /* APIBuildable.swift in Sources */,
