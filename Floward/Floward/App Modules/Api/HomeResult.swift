@@ -6,13 +6,13 @@
  *	Copyright 2021 ___ORGANIZATIONNAME___. All rights reserved.
  */
 
-struct HomeResult: ApiResultable {
+struct HomeResult: ApiResultable, MovieConverter {
     
-    let search: [Movie]?
+    let movies: [Movie]?
     let totalResults, response: String?
 
     enum CodingKeys: String, CodingKey {
-        case search = "Search"
+        case movies = "Search"
         case response = "Response"
         case totalResults
     }
