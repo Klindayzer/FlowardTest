@@ -103,7 +103,9 @@ extension HomeViewController {
         
         let layout = UICollectionViewFlowLayout()
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.backgroundColor = .secondarySystemFill
+        collectionView.backgroundColor = .clear
+        collectionView.showsHorizontalScrollIndicator = false
+        collectionView.showsVerticalScrollIndicator = false
         collectionView.register(MovieCell.self, forCellWithReuseIdentifier: MovieCell.name)
         collectionView.dataSource = self        
         collectionView.delegate = self

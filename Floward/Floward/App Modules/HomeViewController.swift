@@ -45,12 +45,18 @@ final class HomeViewController: UIViewController {
                 self?.hideLoader()
             }
             
-            guard success else { return }
-            self?.collectionView?.reloadData()
+            success ? self?.collectionView?.reloadData() : self?.handleFailureResponse(error: error)
         }
     }
     
-    private func checkTertmAndSerach() {
+    private func handleFailureResponse(error: String) {
+        
+        let alert = UIAlertController(title: "Ops!", message: error, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
+    
+    private func checkTermAndSerach() {
         
         view.endEditing(true)
         guard let term = viewModel.validateSearchTerm(searchTextField?.text) else { return }
@@ -60,7 +66,7 @@ final class HomeViewController: UIViewController {
     // MARK: - Selectors
     @objc
     func searchClicked() {
-        checkTertmAndSerach()
+        checkTermAndSerach()
     }
 }
 
@@ -69,7 +75,7 @@ extension HomeViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
-        checkTertmAndSerach()
+        checkTermAndSerach()
         return true
     }
 }
