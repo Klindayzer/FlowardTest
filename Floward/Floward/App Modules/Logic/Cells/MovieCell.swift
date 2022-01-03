@@ -10,6 +10,15 @@ import UIKit
 
 final class MovieCell: UICollectionViewCell {
     
+    // MARK: - Definitions
+    private enum Values {
+        static let spacing: CGFloat = 16
+        static let fontSize: CGFloat = 16
+        static let titleMaxLines = 2
+        static let cornerRadius: CGFloat = 8
+        static let titleViewHeight: CGFloat = 50
+    }
+
     // MARK: - Properties
     private weak var imageView: UIImageView?
     private weak var label: UILabel?
@@ -18,68 +27,90 @@ final class MovieCell: UICollectionViewCell {
     func setup(with movie: MoviePresentable) {
      
         setupUI()
+        
         imageView?.setImage(url: movie.poster)
         label?.text = movie.title
     }
     
     // MARK: - Protected Methods
     private func setupUI() {
+                
+        setupContentView()
         
+        // Create poster image view
         let posterImage = createPosterImageView()
         contentView.addSubview(posterImage)
+        NSLayoutConstraint.activate([
+            posterImage.topAnchor.constraint(equalTo: contentView.topAnchor),
+            posterImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            posterImage.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            posterImage.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
+        ])
         
-        let shadowImage = createTitleLabel()
-        contentView.addSubview(shadowImage)
+        // Create title shadow image view
+        let shadowView = createShadowView()
+        contentView.addSubview(shadowView)
+        NSLayoutConstraint.activate([
+            shadowView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            shadowView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            shadowView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+            shadowView.heightAnchor.constraint(equalToConstant: Values.titleViewHeight)
+        ])
         
+        // Create title label
         let titleLabel = createTitleLabel()
         contentView.addSubview(titleLabel)
+        NSLayoutConstraint.activate([
+            titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: Values.spacing),
+            titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -Values.spacing),
+            titleLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+            titleLabel.heightAnchor.constraint(equalToConstant: Values.titleViewHeight)
+        ])
         
-        contentView.backgroundColor = .white
         contentView.setNeedsLayout()
+    }
+    
+    private func setupContentView() {
+        
+        contentView.subviews.forEach {
+            $0.removeFromSuperview()
+        }
+        contentView.backgroundColor = .clear
+        contentView.layer.borderWidth = 1
+        contentView.layer.borderColor = UIColor.systemGray.cgColor
+        contentView.layer.cornerRadius = Values.cornerRadius
+        contentView.clipsToBounds = true
     }
     
     private func createPosterImageView() -> UIImageView {
         
         let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .center
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-            imageView.topAnchor.constraint(equalTo: contentView.topAnchor),
-            imageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            imageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
-        ])
+                
         self.imageView = imageView
         return imageView
     }
     
-    private func createShadowImageView() -> UIImageView {
+    private func createShadowView() -> UIView {
         
-        let imageView = UIImageView(image: UIImage(named: "shadow1"))
-        imageView.contentMode = .scaleAspectFill
-        imageView.translatesAutoresizingMaskIntoConstraints = false
+        let view = UIView()
+        view.backgroundColor = .black
+        view.alpha = 0.4
+        view.translatesAutoresizingMaskIntoConstraints = false
         
-        NSLayoutConstraint.activate([
-            imageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            imageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
-        ])
-        return imageView
+        return view
     }
     
     private func createTitleLabel() -> UILabel {
         
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 14)
+        label.font = UIFont.boldSystemFont(ofSize: Values.fontSize)
         label.textColor = .white
+        label.numberOfLines = Values.titleMaxLines
         label.translatesAutoresizingMaskIntoConstraints = false
         
-        NSLayoutConstraint.activate([
-            label.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            label.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            label.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
-        ])
+        self.label = label
         return label
     }
 }

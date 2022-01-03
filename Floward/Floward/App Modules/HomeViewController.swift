@@ -14,7 +14,7 @@ final class HomeViewController: UIViewController {
         
         static let numberOfitemsInRow: CGFloat = 2
         static let itemSpacing: CGFloat = 16
-        static let cellHeight: CGFloat = 250
+        static let cellHeight: CGFloat = 180
     }
     
     // MARK: - Protucted Properties
@@ -25,7 +25,7 @@ final class HomeViewController: UIViewController {
     // MARK: - Overriden Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = .secondarySystemFill
         
         setupUI()
     }
@@ -36,11 +36,32 @@ final class HomeViewController: UIViewController {
         view.endEditing(true)
     }
     
+    // MARK: - Protucted Methods
+    private func search(term: String) {
+        
+        showLoader()
+        viewModel.search(for: term) { [weak self] success, error in
+            
+            defer {
+                self?.hideLoader()
+            }
+            
+            guard success else { return }
+            self?.collectionView?.reloadData()
+        }
+    }
+    
+    private func checkTertmAndSerach() {
+        
+        view.endEditing(true)
+        guard let term = viewModel.validateSearchTerm(searchTextField?.text) else { return }
+        search(term: term)
+    }
+    
     // MARK: - Selectors
     @objc
     func searchClicked() {
-        
-        view.endEditing(true)
+        checkTertmAndSerach()
     }
 }
 
@@ -49,7 +70,7 @@ extension HomeViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
-        textField.resignFirstResponder()
+        checkTertmAndSerach()
         return true
     }
 }

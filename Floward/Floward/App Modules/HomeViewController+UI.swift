@@ -8,8 +8,10 @@
 
 import UIKit
 
+// MARK: - Definitions
 private enum Values {
     static let spacing: CGFloat = 16
+    static let cornerRadius: CGFloat = 8
 }
 
 extension HomeViewController {
@@ -87,9 +89,7 @@ extension HomeViewController {
         textField.returnKeyType = .search
         textField.borderStyle = .roundedRect
         textField.backgroundColor = .white
-        textField.layer.borderWidth = 1
-        textField.layer.borderColor = UIColor.systemGray.cgColor
-        textField.layer.cornerRadius = 8
+        textField.layer.cornerRadius = Values.cornerRadius
         textField.clipsToBounds = true
         textField.textColor = .black
         textField.autocorrectionType = .no
@@ -101,9 +101,9 @@ extension HomeViewController {
     
     private func createCollectionView() -> UICollectionView {
         
-        let layout = UICollectionViewLayout()
+        let layout = UICollectionViewFlowLayout()
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.backgroundColor = .white
+        collectionView.backgroundColor = .secondarySystemFill
         collectionView.register(MovieCell.self, forCellWithReuseIdentifier: MovieCell.name)
         collectionView.dataSource = self        
         collectionView.delegate = self

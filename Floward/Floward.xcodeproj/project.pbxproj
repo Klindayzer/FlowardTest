@@ -542,7 +542,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				UD_API_BASE_URL = testURL;
+				UD_API_BASE_URL = "http://www.omdbapi.com";
 				UD_API_KEY = 3184d334;
 				UD_CURRENT_SCHEME_NAME = Develop;
 			};
@@ -599,7 +599,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				UD_API_BASE_URL = testURL;
+				UD_API_BASE_URL = "http://www.omdbapi.com";
 				UD_API_KEY = 3184d334;
 				UD_CURRENT_SCHEME_NAME = Production;
 				VALIDATE_PRODUCT = YES;

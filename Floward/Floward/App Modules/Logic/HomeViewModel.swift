@@ -9,7 +9,7 @@
 import AKNetworking
 
 final class HomeViewModel {
-
+    
     // MARK: - Properties
     private let apiClient: AKClientContractor
     private var movies = [MoviePresentable]()
@@ -28,9 +28,9 @@ final class HomeViewModel {
     init(apiClient: AKClientContractor = AKApiClient()) {
         self.apiClient = apiClient
     }
-
+    
     // MARK: - Exposed Methods
-    func fetchHomeData(term: String, callback: @escaping APICallback) {
+    func search(for term: String, callback: @escaping APICallback) {
         
         let api = HomeApi(term: term, page: currentPage)
         apiClient.request(buildable: api, type: HomeResult.self) { [weak self] result in
@@ -48,5 +48,12 @@ final class HomeViewModel {
     
     func item(at index: Int) -> MoviePresentable? {
         movies[safe: index]
+    }
+    
+    func validateSearchTerm(_ term: String?) -> String? {
+        
+        guard let term = term?.trimmingCharacters(in: .whitespacesAndNewlines),
+              !term.isEmpty else { return nil }
+        return term
     }
 }
