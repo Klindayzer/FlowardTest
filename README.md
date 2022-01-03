@@ -10,6 +10,7 @@ This project is a small MVP to show case a techniqal task that contaisne Home sc
 - Full depenency injection for when applicable
 - Two environments running schemes (Develop, Production) 
 - Clean folder organization
+- All Visuals are created programmatically
 
 ## How to run
 
