@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		259BF72C2783288C00589D8C /* HomeViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF72B2783288C00589D8C /* HomeViewController+UI.swift */; };
 		25EB78082781BFFE000AEE98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB78072781BFFE000AEE98 /* AppDelegate.swift */; };
 		25EB780A2781BFFE000AEE98 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB78092781BFFE000AEE98 /* SceneDelegate.swift */; };
-		25EB780C2781BFFE000AEE98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB780B2781BFFE000AEE98 /* ViewController.swift */; };
+		25EB780C2781BFFE000AEE98 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB780B2781BFFE000AEE98 /* HomeViewController.swift */; };
 		25EB78112781BFFF000AEE98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25EB78102781BFFF000AEE98 /* Assets.xcassets */; };
 		25EB78142781BFFF000AEE98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25EB78122781BFFF000AEE98 /* LaunchScreen.storyboard */; };
 		25EB781F2781BFFF000AEE98 /* FlowardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB781E2781BFFF000AEE98 /* FlowardTests.swift */; };
@@ -57,10 +58,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		259BF72B2783288C00589D8C /* HomeViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+UI.swift"; sourceTree = "<group>"; };
 		25EB78042781BFFE000AEE98 /* Floward.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Floward.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25EB78072781BFFE000AEE98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25EB78092781BFFE000AEE98 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		25EB780B2781BFFE000AEE98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		25EB780B2781BFFE000AEE98 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		25EB78102781BFFF000AEE98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25EB78132781BFFF000AEE98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25EB78152781BFFF000AEE98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -131,7 +133,6 @@
 				25EB78372781C0FA000AEE98 /* App Delegate */,
 				25EB78382781C10D000AEE98 /* App Modules */,
 				25EB78392781C11E000AEE98 /* Helpers */,
-				25EB783A2781C12A000AEE98 /* UI */,
 				25EB78102781BFFF000AEE98 /* Assets.xcassets */,
 				25EB78122781BFFF000AEE98 /* LaunchScreen.storyboard */,
 				25EB78152781BFFF000AEE98 /* Info.plist */,
@@ -168,7 +169,8 @@
 		25EB78382781C10D000AEE98 /* App Modules */ = {
 			isa = PBXGroup;
 			children = (
-				25EB780B2781BFFE000AEE98 /* ViewController.swift */,
+				25EB780B2781BFFE000AEE98 /* HomeViewController.swift */,
+				259BF72B2783288C00589D8C /* HomeViewController+UI.swift */,
 			);
 			path = "App Modules";
 			sourceTree = "<group>";
@@ -181,13 +183,6 @@
 				25EB78502781C37C000AEE98 /* Environment.swift */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		25EB783A2781C12A000AEE98 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UI;
 			sourceTree = "<group>";
 		};
 		25EB78422781C234000AEE98 /* Frameworks */ = {
@@ -348,9 +343,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25EB780C2781BFFE000AEE98 /* ViewController.swift in Sources */,
+				25EB780C2781BFFE000AEE98 /* HomeViewController.swift in Sources */,
 				25EB78512781C37C000AEE98 /* Environment.swift in Sources */,
 				25EB784C2781C317000AEE98 /* APIProxy.swift in Sources */,
+				259BF72C2783288C00589D8C /* HomeViewController+UI.swift in Sources */,
 				25EB78542781C3B6000AEE98 /* String.swift in Sources */,
 				25EB78082781BFFE000AEE98 /* AppDelegate.swift in Sources */,
 				25EB784E2781C317000AEE98 /* ApiResultable.swift in Sources */,
