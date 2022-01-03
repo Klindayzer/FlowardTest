@@ -7,15 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		259BF72C2783288C00589D8C /* HomeViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF72B2783288C00589D8C /* HomeViewController+UI.swift */; };
+		259BF72F27833CEE00589D8C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 259BF72E27833CEE00589D8C /* Kingfisher */; };
+		259BF73227833CFF00589D8C /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 259BF73127833CFF00589D8C /* MBProgressHUD */; };
+		259BF73527833D4F00589D8C /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF73327833D4F00589D8C /* UIViewController.swift */; };
+		259BF73627833D4F00589D8C /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF73427833D4F00589D8C /* UIImageView.swift */; };
+		259BF73927833DA400589D8C /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF73727833DA400589D8C /* Collection.swift */; };
+		259BF73A27833DA400589D8C /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF73827833DA400589D8C /* NSObject.swift */; };
+		259BF74027833EE600589D8C /* HomeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF73E27833EE600589D8C /* HomeResult.swift */; };
+		259BF74127833EE600589D8C /* HomeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF73F27833EE600589D8C /* HomeApi.swift */; };
+		259BF7432783414000589D8C /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF7422783414000589D8C /* APIError.swift */; };
+		259BF7452783419900589D8C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF7442783419900589D8C /* HomeViewModel.swift */; };
+		259BF747278341DC00589D8C /* MoviePresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF746278341DC00589D8C /* MoviePresentable.swift */; };
+		259BF74A2783512A00589D8C /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF7492783512A00589D8C /* MovieCell.swift */; };
+		259BF74C278354C100589D8C /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF74B278354C100589D8C /* UICollectionView.swift */; };
+		259BF751278375F700589D8C /* EnvironmentTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF74F278375F600589D8C /* EnvironmentTest.swift */; };
+		259BF752278375F700589D8C /* StringTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF750278375F700589D8C /* StringTest.swift */; };
+		259BF7562783760300589D8C /* MockClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF7532783760300589D8C /* MockClient.swift */; };
+		259BF7572783760300589D8C /* MockBuildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF7542783760300589D8C /* MockBuildable.swift */; };
+		259BF7582783760300589D8C /* NetworkingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF7552783760300589D8C /* NetworkingTest.swift */; };
+		259BF75D2783773700589D8C /* HomeMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 259BF75A2783773700589D8C /* HomeMock.json */; };
+		259BF75E2783773700589D8C /* HomeApiTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF75B2783773700589D8C /* HomeApiTest.swift */; };
+		259BF75F2783773700589D8C /* HomeViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259BF75C2783773700589D8C /* HomeViewModelTest.swift */; };
+		259BF761278379FA00589D8C /* HomeMockOnePage.json in Resources */ = {isa = PBXBuildFile; fileRef = 259BF760278379FA00589D8C /* HomeMockOnePage.json */; };
+		259BF76327837B5400589D8C /* HomeMockFailure.json in Resources */ = {isa = PBXBuildFile; fileRef = 259BF76227837B5400589D8C /* HomeMockFailure.json */; };
 		25EB78082781BFFE000AEE98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB78072781BFFE000AEE98 /* AppDelegate.swift */; };
 		25EB780A2781BFFE000AEE98 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB78092781BFFE000AEE98 /* SceneDelegate.swift */; };
-		25EB780C2781BFFE000AEE98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB780B2781BFFE000AEE98 /* ViewController.swift */; };
-		25EB780F2781BFFE000AEE98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25EB780D2781BFFE000AEE98 /* Main.storyboard */; };
+		25EB780C2781BFFE000AEE98 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB780B2781BFFE000AEE98 /* HomeViewController.swift */; };
 		25EB78112781BFFF000AEE98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25EB78102781BFFF000AEE98 /* Assets.xcassets */; };
 		25EB78142781BFFF000AEE98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25EB78122781BFFF000AEE98 /* LaunchScreen.storyboard */; };
-		25EB781F2781BFFF000AEE98 /* FlowardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB781E2781BFFF000AEE98 /* FlowardTests.swift */; };
-		25EB78292781BFFF000AEE98 /* FlowardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB78282781BFFF000AEE98 /* FlowardUITests.swift */; };
-		25EB782B2781BFFF000AEE98 /* FlowardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB782A2781BFFF000AEE98 /* FlowardUITestsLaunchTests.swift */; };
+		25EB78442781C234000AEE98 /* AKNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25EB78432781C234000AEE98 /* AKNetworking.framework */; };
+		25EB78452781C234000AEE98 /* AKNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 25EB78432781C234000AEE98 /* AKNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		25EB784D2781C317000AEE98 /* APIVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB78492781C317000AEE98 /* APIVersion.swift */; };
+		25EB784E2781C317000AEE98 /* ApiResultable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB784A2781C317000AEE98 /* ApiResultable.swift */; };
+		25EB784F2781C317000AEE98 /* APIBuildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB784B2781C317000AEE98 /* APIBuildable.swift */; };
+		25EB78512781C37C000AEE98 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB78502781C37C000AEE98 /* Environment.swift */; };
+		25EB78542781C3B6000AEE98 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB78532781C3B6000AEE98 /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,29 +53,59 @@
 			remoteGlobalIDString = 25EB78032781BFFE000AEE98;
 			remoteInfo = Floward;
 		};
-		25EB78252781BFFF000AEE98 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 25EB77FC2781BFFE000AEE98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 25EB78032781BFFE000AEE98;
-			remoteInfo = Floward;
-		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		25EB78462781C235000AEE98 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				25EB78452781C234000AEE98 /* AKNetworking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		259BF72B2783288C00589D8C /* HomeViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+UI.swift"; sourceTree = "<group>"; };
+		259BF73327833D4F00589D8C /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		259BF73427833D4F00589D8C /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		259BF73727833DA400589D8C /* Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		259BF73827833DA400589D8C /* NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
+		259BF73E27833EE600589D8C /* HomeResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeResult.swift; sourceTree = "<group>"; };
+		259BF73F27833EE600589D8C /* HomeApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeApi.swift; sourceTree = "<group>"; };
+		259BF7422783414000589D8C /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		259BF7442783419900589D8C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		259BF746278341DC00589D8C /* MoviePresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePresentable.swift; sourceTree = "<group>"; };
+		259BF7492783512A00589D8C /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		259BF74B278354C100589D8C /* UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
+		259BF74F278375F600589D8C /* EnvironmentTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentTest.swift; sourceTree = "<group>"; };
+		259BF750278375F700589D8C /* StringTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTest.swift; sourceTree = "<group>"; };
+		259BF7532783760300589D8C /* MockClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockClient.swift; sourceTree = "<group>"; };
+		259BF7542783760300589D8C /* MockBuildable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockBuildable.swift; sourceTree = "<group>"; };
+		259BF7552783760300589D8C /* NetworkingTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingTest.swift; sourceTree = "<group>"; };
+		259BF75A2783773700589D8C /* HomeMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HomeMock.json; sourceTree = "<group>"; };
+		259BF75B2783773700589D8C /* HomeApiTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeApiTest.swift; sourceTree = "<group>"; };
+		259BF75C2783773700589D8C /* HomeViewModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModelTest.swift; sourceTree = "<group>"; };
+		259BF760278379FA00589D8C /* HomeMockOnePage.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HomeMockOnePage.json; sourceTree = "<group>"; };
+		259BF76227837B5400589D8C /* HomeMockFailure.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HomeMockFailure.json; sourceTree = "<group>"; };
 		25EB78042781BFFE000AEE98 /* Floward.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Floward.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25EB78072781BFFE000AEE98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25EB78092781BFFE000AEE98 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		25EB780B2781BFFE000AEE98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		25EB780E2781BFFE000AEE98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		25EB780B2781BFFE000AEE98 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		25EB78102781BFFF000AEE98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25EB78132781BFFF000AEE98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25EB78152781BFFF000AEE98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25EB781A2781BFFF000AEE98 /* FlowardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		25EB781E2781BFFF000AEE98 /* FlowardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowardTests.swift; sourceTree = "<group>"; };
-		25EB78242781BFFF000AEE98 /* FlowardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		25EB78282781BFFF000AEE98 /* FlowardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowardUITests.swift; sourceTree = "<group>"; };
-		25EB782A2781BFFF000AEE98 /* FlowardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		25EB78432781C234000AEE98 /* AKNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AKNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25EB78492781C317000AEE98 /* APIVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIVersion.swift; sourceTree = "<group>"; };
+		25EB784A2781C317000AEE98 /* ApiResultable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResultable.swift; sourceTree = "<group>"; };
+		25EB784B2781C317000AEE98 /* APIBuildable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIBuildable.swift; sourceTree = "<group>"; };
+		25EB78502781C37C000AEE98 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		25EB78532781C3B6000AEE98 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +113,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				259BF73227833CFF00589D8C /* MBProgressHUD in Frameworks */,
+				259BF72F27833CEE00589D8C /* Kingfisher in Frameworks */,
+				25EB78442781C234000AEE98 /* AKNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,23 +126,84 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		25EB78212781BFFF000AEE98 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		259BF73B27833DC800589D8C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				259BF746278341DC00589D8C /* MoviePresentable.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		259BF73C27833DCF00589D8C /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				259BF7482783511000589D8C /* Cells */,
+				259BF73B27833DC800589D8C /* Model */,
+				259BF73D27833DD600589D8C /* Api */,
+				259BF7442783419900589D8C /* HomeViewModel.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		259BF73D27833DD600589D8C /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				259BF73F27833EE600589D8C /* HomeApi.swift */,
+				259BF73E27833EE600589D8C /* HomeResult.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		259BF7482783511000589D8C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				259BF7492783512A00589D8C /* MovieCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		259BF74D278375A200589D8C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				259BF74E278375AE00589D8C /* Networking */,
+				259BF74F278375F600589D8C /* EnvironmentTest.swift */,
+				259BF750278375F700589D8C /* StringTest.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		259BF74E278375AE00589D8C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				259BF7542783760300589D8C /* MockBuildable.swift */,
+				259BF7532783760300589D8C /* MockClient.swift */,
+				259BF7552783760300589D8C /* NetworkingTest.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		259BF7592783771900589D8C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				259BF75A2783773700589D8C /* HomeMock.json */,
+				259BF760278379FA00589D8C /* HomeMockOnePage.json */,
+				259BF76227837B5400589D8C /* HomeMockFailure.json */,
+				259BF75B2783773700589D8C /* HomeApiTest.swift */,
+				259BF75C2783773700589D8C /* HomeViewModelTest.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		25EB77FB2781BFFE000AEE98 = {
 			isa = PBXGroup;
 			children = (
 				25EB78062781BFFE000AEE98 /* Floward */,
 				25EB781D2781BFFF000AEE98 /* FlowardTests */,
-				25EB78272781BFFF000AEE98 /* FlowardUITests */,
 				25EB78052781BFFE000AEE98 /* Products */,
+				25EB78422781C234000AEE98 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,7 +212,6 @@
 			children = (
 				25EB78042781BFFE000AEE98 /* Floward.app */,
 				25EB781A2781BFFF000AEE98 /* FlowardTests.xctest */,
-				25EB78242781BFFF000AEE98 /* FlowardUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,10 +219,9 @@
 		25EB78062781BFFE000AEE98 /* Floward */ = {
 			isa = PBXGroup;
 			children = (
-				25EB78072781BFFE000AEE98 /* AppDelegate.swift */,
-				25EB78092781BFFE000AEE98 /* SceneDelegate.swift */,
-				25EB780B2781BFFE000AEE98 /* ViewController.swift */,
-				25EB780D2781BFFE000AEE98 /* Main.storyboard */,
+				25EB78372781C0FA000AEE98 /* App Delegate */,
+				25EB78382781C10D000AEE98 /* App Modules */,
+				25EB78392781C11E000AEE98 /* Helpers */,
 				25EB78102781BFFF000AEE98 /* Assets.xcassets */,
 				25EB78122781BFFF000AEE98 /* LaunchScreen.storyboard */,
 				25EB78152781BFFF000AEE98 /* Info.plist */,
@@ -113,18 +232,71 @@
 		25EB781D2781BFFF000AEE98 /* FlowardTests */ = {
 			isa = PBXGroup;
 			children = (
-				25EB781E2781BFFF000AEE98 /* FlowardTests.swift */,
+				259BF7592783771900589D8C /* Home */,
+				259BF74D278375A200589D8C /* Helpers */,
 			);
 			path = FlowardTests;
 			sourceTree = "<group>";
 		};
-		25EB78272781BFFF000AEE98 /* FlowardUITests */ = {
+		25EB78372781C0FA000AEE98 /* App Delegate */ = {
 			isa = PBXGroup;
 			children = (
-				25EB78282781BFFF000AEE98 /* FlowardUITests.swift */,
-				25EB782A2781BFFF000AEE98 /* FlowardUITestsLaunchTests.swift */,
+				25EB78072781BFFE000AEE98 /* AppDelegate.swift */,
+				25EB78092781BFFE000AEE98 /* SceneDelegate.swift */,
 			);
-			path = FlowardUITests;
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		25EB78382781C10D000AEE98 /* App Modules */ = {
+			isa = PBXGroup;
+			children = (
+				259BF73C27833DCF00589D8C /* Business */,
+				25EB780B2781BFFE000AEE98 /* HomeViewController.swift */,
+				259BF72B2783288C00589D8C /* HomeViewController+UI.swift */,
+			);
+			path = "App Modules";
+			sourceTree = "<group>";
+		};
+		25EB78392781C11E000AEE98 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				25EB78522781C39D000AEE98 /* Extensions */,
+				25EB78472781C2E2000AEE98 /* Networking */,
+				25EB78502781C37C000AEE98 /* Environment.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		25EB78422781C234000AEE98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25EB78432781C234000AEE98 /* AKNetworking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		25EB78472781C2E2000AEE98 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				25EB784B2781C317000AEE98 /* APIBuildable.swift */,
+				25EB784A2781C317000AEE98 /* ApiResultable.swift */,
+				25EB78492781C317000AEE98 /* APIVersion.swift */,
+				259BF7422783414000589D8C /* APIError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		25EB78522781C39D000AEE98 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				259BF74B278354C100589D8C /* UICollectionView.swift */,
+				259BF73727833DA400589D8C /* Collection.swift */,
+				259BF73827833DA400589D8C /* NSObject.swift */,
+				259BF73427833D4F00589D8C /* UIImageView.swift */,
+				259BF73327833D4F00589D8C /* UIViewController.swift */,
+				25EB78532781C3B6000AEE98 /* String.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,12 +309,17 @@
 				25EB78002781BFFE000AEE98 /* Sources */,
 				25EB78012781BFFE000AEE98 /* Frameworks */,
 				25EB78022781BFFE000AEE98 /* Resources */,
+				25EB78462781C235000AEE98 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Floward;
+			packageProductDependencies = (
+				259BF72E27833CEE00589D8C /* Kingfisher */,
+				259BF73127833CFF00589D8C /* MBProgressHUD */,
+			);
 			productName = Floward;
 			productReference = 25EB78042781BFFE000AEE98 /* Floward.app */;
 			productType = "com.apple.product-type.application";
@@ -165,24 +342,6 @@
 			productReference = 25EB781A2781BFFF000AEE98 /* FlowardTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		25EB78232781BFFF000AEE98 /* FlowardUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 25EB78342781BFFF000AEE98 /* Build configuration list for PBXNativeTarget "FlowardUITests" */;
-			buildPhases = (
-				25EB78202781BFFF000AEE98 /* Sources */,
-				25EB78212781BFFF000AEE98 /* Frameworks */,
-				25EB78222781BFFF000AEE98 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				25EB78262781BFFF000AEE98 /* PBXTargetDependency */,
-			);
-			name = FlowardUITests;
-			productName = FlowardUITests;
-			productReference = 25EB78242781BFFF000AEE98 /* FlowardUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -200,10 +359,6 @@
 						CreatedOnToolsVersion = 13.1;
 						TestTargetID = 25EB78032781BFFE000AEE98;
 					};
-					25EB78232781BFFF000AEE98 = {
-						CreatedOnToolsVersion = 13.1;
-						TestTargetID = 25EB78032781BFFE000AEE98;
-					};
 				};
 			};
 			buildConfigurationList = 25EB77FF2781BFFE000AEE98 /* Build configuration list for PBXProject "Floward" */;
@@ -215,13 +370,16 @@
 				Base,
 			);
 			mainGroup = 25EB77FB2781BFFE000AEE98;
+			packageReferences = (
+				259BF72D27833CEE00589D8C /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				259BF73027833CFF00589D8C /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
+			);
 			productRefGroup = 25EB78052781BFFE000AEE98 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				25EB78032781BFFE000AEE98 /* Floward */,
 				25EB78192781BFFF000AEE98 /* FlowardTests */,
-				25EB78232781BFFF000AEE98 /* FlowardUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,7 +391,6 @@
 			files = (
 				25EB78142781BFFF000AEE98 /* LaunchScreen.storyboard in Resources */,
 				25EB78112781BFFF000AEE98 /* Assets.xcassets in Resources */,
-				25EB780F2781BFFE000AEE98 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,13 +398,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		25EB78222781BFFF000AEE98 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				259BF75D2783773700589D8C /* HomeMock.json in Resources */,
+				259BF761278379FA00589D8C /* HomeMockOnePage.json in Resources */,
+				259BF76327837B5400589D8C /* HomeMockFailure.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +411,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25EB780C2781BFFE000AEE98 /* ViewController.swift in Sources */,
+				259BF7452783419900589D8C /* HomeViewModel.swift in Sources */,
+				25EB780C2781BFFE000AEE98 /* HomeViewController.swift in Sources */,
+				25EB78512781C37C000AEE98 /* Environment.swift in Sources */,
+				259BF73A27833DA400589D8C /* NSObject.swift in Sources */,
+				259BF73527833D4F00589D8C /* UIViewController.swift in Sources */,
+				259BF73627833D4F00589D8C /* UIImageView.swift in Sources */,
+				259BF72C2783288C00589D8C /* HomeViewController+UI.swift in Sources */,
+				259BF73927833DA400589D8C /* Collection.swift in Sources */,
+				259BF74027833EE600589D8C /* HomeResult.swift in Sources */,
+				25EB78542781C3B6000AEE98 /* String.swift in Sources */,
+				259BF74C278354C100589D8C /* UICollectionView.swift in Sources */,
 				25EB78082781BFFE000AEE98 /* AppDelegate.swift in Sources */,
+				259BF74127833EE600589D8C /* HomeApi.swift in Sources */,
+				25EB784E2781C317000AEE98 /* ApiResultable.swift in Sources */,
+				25EB784D2781C317000AEE98 /* APIVersion.swift in Sources */,
+				259BF74A2783512A00589D8C /* MovieCell.swift in Sources */,
+				259BF747278341DC00589D8C /* MoviePresentable.swift in Sources */,
+				259BF7432783414000589D8C /* APIError.swift in Sources */,
+				25EB784F2781C317000AEE98 /* APIBuildable.swift in Sources */,
 				25EB780A2781BFFE000AEE98 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,16 +438,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25EB781F2781BFFF000AEE98 /* FlowardTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		25EB78202781BFFF000AEE98 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				25EB782B2781BFFF000AEE98 /* FlowardUITestsLaunchTests.swift in Sources */,
-				25EB78292781BFFF000AEE98 /* FlowardUITests.swift in Sources */,
+				259BF7562783760300589D8C /* MockClient.swift in Sources */,
+				259BF75E2783773700589D8C /* HomeApiTest.swift in Sources */,
+				259BF7582783760300589D8C /* NetworkingTest.swift in Sources */,
+				259BF7572783760300589D8C /* MockBuildable.swift in Sources */,
+				259BF751278375F700589D8C /* EnvironmentTest.swift in Sources */,
+				259BF752278375F700589D8C /* StringTest.swift in Sources */,
+				259BF75F2783773700589D8C /* HomeViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,22 +456,9 @@
 			target = 25EB78032781BFFE000AEE98 /* Floward */;
 			targetProxy = 25EB781B2781BFFF000AEE98 /* PBXContainerItemProxy */;
 		};
-		25EB78262781BFFF000AEE98 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 25EB78032781BFFE000AEE98 /* Floward */;
-			targetProxy = 25EB78252781BFFF000AEE98 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		25EB780D2781BFFE000AEE98 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				25EB780E2781BFFE000AEE98 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		25EB78122781BFFF000AEE98 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -374,6 +528,9 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				UD_API_BASE_URL = "http://www.omdbapi.com";
+				UD_API_KEY = 3184d334;
+				UD_CURRENT_SCHEME_NAME = Develop;
 			};
 			name = Debug;
 		};
@@ -428,6 +585,9 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				UD_API_BASE_URL = "http://www.omdbapi.com";
+				UD_API_KEY = 3184d334;
+				UD_CURRENT_SCHEME_NAME = Production;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -443,9 +603,8 @@
 				INFOPLIST_FILE = Floward/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -471,9 +630,8 @@
 				INFOPLIST_FILE = Floward/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -536,50 +694,6 @@
 			};
 			name = Release;
 		};
-		25EB78352781BFFF000AEE98 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.klindayzer.FlowardUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Floward;
-			};
-			name = Debug;
-		};
-		25EB78362781BFFF000AEE98 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.klindayzer.FlowardUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Floward;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -610,16 +724,39 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		25EB78342781BFFF000AEE98 /* Build configuration list for PBXNativeTarget "FlowardUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				25EB78352781BFFF000AEE98 /* Debug */,
-				25EB78362781BFFF000AEE98 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		259BF72D27833CEE00589D8C /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = exactVersion;
+				version = 7.1.2;
+			};
+		};
+		259BF73027833CFF00589D8C /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jdg/MBProgressHUD.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		259BF72E27833CEE00589D8C /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 259BF72D27833CEE00589D8C /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		259BF73127833CFF00589D8C /* MBProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 259BF73027833CFF00589D8C /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
+			productName = MBProgressHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 25EB77FC2781BFFE000AEE98 /* Project object */;
 }

@@ -1,0 +1,76 @@
+{
+    "Search": [
+        {
+            "Title": "Artist Profile: Adam Mizner",
+            "Year": "2017",
+            "imdbID": "tt8667726",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BOTM0ZDE0YzgtOWI3Zi00YTM0LWE1N2EtYTZlZDhkZTQ0OTQ3XkEyXkFqcGdeQXVyNjI5NjYyNjU@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Adam Barfi",
+            "Year": "2017",
+            "imdbID": "tt10631320",
+            "Type": "movie",
+            "Poster": "N/A"
+        },
+        {
+            "Title": "Felix Jaehn Feat. Hearts & Colors, Adam Trigger: Like a Riddle",
+            "Year": "2017",
+            "imdbID": "tt10638680",
+            "Type": "movie",
+            "Poster": "N/A"
+        },
+        {
+            "Title": "Adam Exe",
+            "Year": "2017",
+            "imdbID": "tt11816356",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BNjU1YjVhM2ItMGZlNy00M2UyLWE1ODAtMzk2NTJjYmViZjMyXkEyXkFqcGdeQXVyMTEzNzkwMTYx._V1_SX300.jpg"
+        },
+        {
+            "Title": "Adam Lallana - Skills and Goals - Liverpool - 2016-2017",
+            "Year": "2017",
+            "imdbID": "tt12332340",
+            "Type": "movie",
+            "Poster": "N/A"
+        },
+        {
+            "Title": "Adam & Eve",
+            "Year": "2017",
+            "imdbID": "tt13834496",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BYzNhNDg4Y2YtM2I3YS00NGE4LThmZmEtMDg0ZWNkM2I5MzYxXkEyXkFqcGdeQXVyMzU4NjY4NjI@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Adam",
+            "Year": "2017",
+            "imdbID": "tt6753416",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BOGYyZmUxODMtYmVjOC00YjA1LWFkZDAtOGQ5ZmMwYTUxZDgyXkEyXkFqcGdeQXVyNjkxNjg1NDI@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Adam Meet Eve",
+            "Year": "2017",
+            "imdbID": "tt6948738",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BOWY0NjE1MjgtZjY0Ny00NzE0LWE3MTktNjlmYmI1Njk4M2ZiXkEyXkFqcGdeQXVyNjk2NDQwMzg@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Adam vs the Zombie Apocalypse",
+            "Year": "2017",
+            "imdbID": "tt6156508",
+            "Type": "movie",
+            "Poster": "N/A"
+        },
+        {
+            "Title": "Adam & Eve",
+            "Year": "2017",
+            "imdbID": "tt6505344",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BNWMyYmY0M2UtOGI2OS00OTYzLWI5MzItNDk2YmJmMmYxMzE5XkEyXkFqcGdeQXVyNjk5ODg5NTc@._V1_SX300.jpg"
+        }
+    ],
+    "totalResults": "29",
+    "Response": "True"
+}
